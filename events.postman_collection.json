@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "2071e20e-6f6f-466a-ac38-999ab1975fc0",
+		"name": "events",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19006206"
+	},
+	"item": [
+		{
+			"name": "sendNotification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic NDU0NzU3NDktZjNlOS00NjU2LTg3ZTEtODQ1N2RkNDZiODM0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"app_id\": \"e39c94ad-a37c-4ddb-ad1a-2ceb0cd2956d\",\r\n  \"included_segments\": [\"test\"],\r\n  \"data\": { \"url\": \"https://discoduroderoer.es\" },\r\n  \"headings\": {\"en\": \"test from postman\"},\r\n  \"contents\": {\"en\": \"test from postman\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://onesignal.com/api/v1/notifications",
+					"protocol": "https",
+					"host": [
+						"onesignal",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
